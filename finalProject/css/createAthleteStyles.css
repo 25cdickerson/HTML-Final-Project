@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/*
+    Author: Christopher Dickerson
+    Date:7/19/20
+
+    File: createAthleteStyles.css
+
+    Styles for the Create Athlete page
+*/
+
+@import url(../css/styles.css);
+
+/* Header Styles */
+h1{
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 3px;
+    padding-bottom: 1em;
+}
+
+/* Form Styles */
+form{
+    display: flex; 
+    flex-flow: row wrap;
+}
+
+form > fieldset{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, whitesmoke 0%, rgba(146,145,255,1) 100%);
+    border-radius: 20px; 
+    flex: 1 1 300px; 
+    font-size: 1.25em; 
+    letter-spacing: 0.25em;
+    padding: 10px; 
+    margin: 10px;
+}
+    
+form fieldset input{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.formRow { 
+    display: flex; 
+    flex-flow: row wrap; 
+    margin: 7px 0px;
+}
+    
+.formRow > * { 
+    flex: 1 1 25%;
+}
+
+p{
+    font-size: 1em;
+    text-align: center;
+}
+
+textarea{
+    margin-top: 10px; 
+    height: 100px; 
+    width: 95%;
+}
+
+/* Submit Button Styles */
+
+button {
+    background: transparent;
+    border: none;
+    display: block;
+    margin: 5px auto;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 640px){
+    /* Header Styles */
+    h1{
+        display: block;
+        text-align: center;
+        font-size: 1.75em;
+        letter-spacing: 3px;
+        padding-bottom: 0.5em;
+    }
+
+    label{
+        padding-left: 0;
+        letter-spacing: normal;
+        font-size: 0.75em;
+    }
+
+    .formRow{
+        padding-right: 0;
+    }
+
+    textarea{
+        width: 100%;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 641px){
+    label{
+        padding-left: 10em;
+        font-size: 1.25em;
+    }
+
+    .formRow{
+        padding-right: 10em;
+    }
+
+    .button{
+        display: block;
+        float: left;
+        margin-left: 6em;
+    }
+
+    #reset, #submit{
+        margin-left: 15em;
+    }
+}

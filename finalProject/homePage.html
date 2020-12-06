@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        Author: Christopher Dickerson
+        Date: 7/18/20
+
+        File: homepage.html
+
+        This page is the main page you see that includes links to athlete profiles
+        just under their pictures and also link to all of the other pages listed
+        in the horizontal navigation in the header element. This also has a calendar
+        of meet dates in August.
+     -->
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Home Page</title>
+        <link href="css/reset.css" rel="stylesheet" media="all"/>
+        <link href="css/hpStyles.css" rel="stylesheet" media="all"/>
+        <link href="css/animate.css" rel="stylesheet" media="all"/>
+        <link href="css/calendar.css" rel="stylesheet" media="all"/>
+    </head>
+
+
+    <body>
+        <header>
+            <image src="../finalProject/media/RunnerSpaceLogo.png" alt="Runner Space Logo"/>
+
+            <nav class="horizontal">
+                <ul class="mainmenu">
+                    <li><a href="homePage.html">Home</a></li>
+                    <li><a href="createAthlete.html">Create Athlete</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </nav>
+            <div id="box"></div>
+            <div class="space"></div>
+        </header>
+        <!--Links to athlete specific webpages-->
+        <h1 class="head">Athletes</h1>
+        <p>*Click on the athletes' names to view their profiles*<p> 
+        <ul id=athletes>
+            <li>
+                <figure>
+                    <img src="../finalProject/media/Engels.jpg" alt = "Athlete">
+                    <figcaption><a href="engels.html">Craig Engels</a></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="../finalProject/media/Brown.png" alt = "Athlete">
+                    <figcaption><a href="brown.html">Spencer Brown</a></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="../finalProject/media/Hunter.jpg" alt = "Athlete">
+                    <figcaption><a href="hunter.html">Drew Hunter</a></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="../finalProject/media/Cain.jpg" alt="Athlete">
+                    <figcaption><a href="cain.html">Mary Cain</a></figcaption>
+                </figure>
+            </li>
+        </ul>
+
+    <!--Sets up calendar for upcoming races in August-->
+    <div class="space"></div>
+    <h1 class="head" id="UR">Upcoming Races</h1>
+        <table class = "calendar">
+            <thead>
+                <tr>
+                    <th colspan="7" rowspan="2">August 2020</th>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-date="Sun, Jul 26, 2020">
+                        <h1>26</h1>
+                    </td>
+                    <td data-date="Mon, Jul 27, 2020">
+                        <h1>27</h1>
+                    </td>
+                    <td data-date="Tue, Jul 28, 2020">
+                        <h1>28</h1>
+                    </td>
+                    <td data-date="Wed, Jul 29, 2020">
+                        <h1>29</h1>
+                    </td>
+                    <td data-date="Thur, Jul 30, 2020">
+                        <h1>30</h1>
+                    </td>
+                    <td data-date="Fri, Jul 31, 2020">
+                        <h1>31</h1>
+                    </td>
+                    <td data-date="Sat, Aug 1, 2020" id="aug">
+                        <h1>1</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-date="Sun, Aug 2, 2020" id="aug">
+                        <h1>2</h1>
+                    </td>
+                    <td data-date="Mon, Aug 3, 2020" id="aug">
+                        <h1>3</h1>
+                    </td>
+                    <td data-date="Tue, Aug 4, 2020" id="aug">
+                        <h1>4</h1>
+                    </td>
+                    <td data-date="Wed, Aug 5, 2020" id="aug">
+                        <h1>5</h1>
+                    </td>
+                    <td data-date="Thur, Aug 6, 2020" id="aug">
+                        <h1>2</h1>
+                    </td>
+                    <td data-date="Fri, Aug 7, 2020" id="aug">
+                        <h1>7</h1>
+                    </td>
+                    <td data-date="Sat, Aug 8, 2020" id="aug">
+                        <h1>8</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-date="Sun, Aug 9, 2020" id="aug">
+                        <h1>9</h1>
+                    </td>
+                    <td data-date="Mon, Aug 10, 2020" id="aug">
+                        <h1>10</h1>
+                    </td>
+                    <td data-date="Tue, Aug 11, 2020" id="aug">
+                        <h1>11</h1>
+                    </td>
+                    <td data-date="Wed, Aug 12, 2020" id="aug">
+                        <h1>12</h1>
+                    </td>
+                    <td data-date="Thur, Aug 13, 2020" id="aug">
+                        <h1>13</h1>
+                    </td>
+                    <td data-date="Fri, Aug 14, 2020" id="aug">
+                        <h1>14</h1>
+                    </td>
+                    <td data-date="Sat, Aug 15, 2020" id="aug">
+                        <h1>15</h1>
+                        <dl>
+                            <dt>OHSAA Early Season Invite</dt>
+                            <dd>Obetz, OH</dd>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-date="Sun, Aug 16, 2020" id="aug">
+                        <h1>16</h1>
+                    </td>
+                    <td data-date="Mon, Aug 17, 2020" id="aug">
+                        <h1>17</h1>
+                    </td>
+                    <td data-date="Tue, Aug 18, 2020" id="aug">
+                        <h1>18</h1>
+                    </td>
+                    <td data-date="Wed, Aug 19, 2020" id="aug">
+                        <h1>19</h1>
+                    </td>
+                    <td data-date="Thur, Aug 20, 2020" id="aug">
+                        <h1>20</h1>
+                    </td>
+                    <td data-date="Fri, Aug 21, 2020" id="aug">
+                        <h1>21</h1>
+                    </td>
+                    <td data-date="Sat, Aug 22, 2020" id="aug">
+                        <h1>22</h1>
+                        <dl>
+                            <dt>Central Kentucky Run for the Gold</dt>
+                            <dd>Elizabethtown, KY</dd>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-date="Sun, Aug 23, 2020" id="aug">
+                        <h1>23</h1>
+                    </td>
+                    <td data-date="Mon, Aug 24, 2020" id="aug">
+                        <h1>24</h1>
+                    </td>
+                    <td data-date="Tue, Aug 25, 2020" id="aug">
+                        <h1>25</h1>
+                    </td>
+                    <td data-date="Wed, Aug 26, 2020" id="aug">
+                        <h1>26</h1>
+                    </td>
+                    <td data-date="Thur, Aug 27, 2020" id="aug">
+                        <h1>27</h1>
+                    </td>
+                    <td data-date="Fri, Aug 28, 2020" id="aug">
+                        <h1>28</h1>
+                        <dl>
+                            <dt>Moeller Primetime Invititational</dt>
+                            <dd>Mason, OH</dd>
+                        </dl>
+                    </td>
+                    <td data-date="Sat, Aug 29, 2020" id="aug">
+                        <h1>29</h1>
+                        <dl>
+                            <dt>East Classic</dt>
+                            <dd>West Chester, OH</dd>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-date="Sun, Aug 30, 2020" id="aug">
+                        <h1>30</h1>
+                    </td>
+                    <td data-date="Mon, Aug 31, 2020" id="aug">
+                        <h1>31</h1>
+                    </td>
+                    <td data-date="Tue, Sept 1, 2020">
+                        <h1>24</h1>
+                    </td>
+                    <td data-date="Wed, Sept 2, 2020">
+                        <h1>2</h1>
+                    </td>
+                    <td data-date="Thur, Sept 3, 2020">
+                        <h1>3</h1>
+                    </td>
+                    <td data-date="Fri, Sept 4, 2020">
+                        <h1>4</h1>
+                    </td>
+                    <td data-date="Sat, Sept 5, 2020">
+                        <h1>5</h1>
+                        <dl>
+                            <dt>Loveland Invite</dt>
+                            <dd>Loveland, OH</dd>
+                        </dl>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="7">*Race Times Are Not Listed*</th>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <footer>
+            RunnerSpace &#8226; Christopher Dickerson 2020
+        </footer>
+    </body>
+
+</html>

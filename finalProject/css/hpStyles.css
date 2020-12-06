@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/*
+    Author: Christopher Dickerson
+    Date:7/19/20
+
+    File: hpStyles.css
+
+    Styles for the homepage
+*/
+
+@import url(../css/styles.css);
+
+/* Mobile Styles */
+@media only screen and (max-width: 640px){
+    .head{
+        display: block;
+        text-align: center;
+        font-size: 1.75em;
+        letter-spacing: 3px;
+        padding-bottom: 0.5em;
+    }
+
+    p{
+        display: block;
+        text-align: center;
+        font-size: 0.75em;
+        letter-spacing: 1px;
+    }
+
+    #UR{
+        margin-bottom: 1em;
+    }
+
+    #athletes{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-rows: 24% 24% 24% 24%;
+        grid-row-gap: 0.5em;
+    }
+    
+    #athletes li figure img{
+        border: black solid 0.25em;
+        box-shadow: 0px 0px 20px gray;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    #athletes li figure figcaption a{
+        text-decoration: none;
+        width: 25%;
+        font-size: 2em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 641px){
+    /* Styles for the athlete selector */
+
+    .head{
+        display: block;
+        text-align: center;
+        font-size: 1.75em;
+        letter-spacing: 3px;
+        padding-bottom: 1em;
+    }
+
+    p{
+        display: block;
+        text-align: center;
+        font-size: 1em;
+        letter-spacing: 1px;
+        padding-bottom: 1em;
+    }
+
+    #athletes{
+        display: grid;
+        margin-left: 3em;
+        margin-right: 3em;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-row-gap: 2em;
+    }
+
+    #athletes li figure img{
+        border: black solid 0.25em;
+        box-shadow: 0px 0px 20px gray;
+        margin-bottom: 1em;
+    }
+
+    #athletes li figure figcaption a{
+        text-decoration: none;
+        width: 25%;
+        font-size: 2em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

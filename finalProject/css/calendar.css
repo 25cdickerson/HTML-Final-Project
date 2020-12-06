@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/*
+    Author: Christopher Dickerson
+    Date:7/19/20
+
+    File: calendar.css
+
+    This stylesheet is meant to style the calendar which is a table
+*/
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+
+@media only screen and (max-width: 640px){
+    table,tbody,tr,td,th,caption{
+        display: block;
+    }
+
+    thead, tfoot{
+        display: none;
+    }
+    
+    td{
+        position: relative;
+        padding-left: 40%;
+        color: black;
+        min-height: 40px;
+        border: 1px dotted gray;
+    }
+    
+
+    td:before{
+        content: attr(data-date);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;
+        padding: 5px;
+    }
+
+    tr:nth-of-type(odd){
+        background-color: #9291ff;
+        border: 2px solid gray;
+    }
+}
+
+
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+
+@media only screen and (min-width: 641px){
+    table{
+        background-image: url(../media/Runner.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 25%;
+        border: 6px solid black;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        table-layout: fixed;
+        width: 85%;
+    }
+
+    tbody tr{
+        height: 100px;
+    }
+
+    td,th{
+        border: 1px solid gray;
+        font-size: 0.85em;
+        padding: 5px;
+        vertical-align: top;
+        width: 14.28%;
+        word-wrap: break-word;
+    }
+
+    td{
+        background-color: rgba(232, 214, 148, 0.6);
+        color: black;
+    }
+
+    td#aug{
+        background-color: rgba(171, 171, 171, 0.6);
+        box-shadow: 0px 0px 20px gray;
+    }
+
+    tfoot{
+        background-color: #9291ff;
+    }
+}

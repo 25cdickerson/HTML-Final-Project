@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/*
+    Author: Christopher Dickerson
+    Date:7/19/20
+
+    File: reviewStyles.css
+
+    Styles for the Review Page
+*/
+@import url(../css/createAthleteStyles.css);
+
+/* Form Styles */
+form{
+    width: 60%;
+    margin-left: 2em;
+}
+
+label{
+    padding-left: 0em;
+    font-size: 1em;
+    letter-spacing: normal;
+}
+
+.formRow{
+    padding-right: 0em;
+}
+
+#email{
+    padding-left: 1em;
+    width: 60%;
+}
+
+#telid{
+    padding-left: 1em;
+    width: 48%;
+}
+
+.optGroup{
+    border: none;
+}
+
+.optGroup input, .optGroup label{
+    display: block;
+    float: right;
+    padding-right: 5em;
+}
+
+/* Aside Styles */
+aside{
+    display: block;
+    float: right;
+    width: 35%;
+}
+
+aside blockquote{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, whitesmoke 0%, rgba(146,145,255,1) 100%);
+    border-radius: 5px; 
+    border: 0.25em solid black;        
+    box-shadow: 0px 0px 20px gray;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin-bottom: 5em;
+    margin-right: 2em;
+    font-size: 1.25em;
+}
+
+#first{
+    margin-top: 5.5em;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 640px){
+    h1{
+        font-size: 1em;
+    }
+
+    form{
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .optGroup input, .optGroup label{
+        display: block;
+        float: center;
+        padding-right: 0;
+    }
+
+    aside{
+        display: block;
+        float: center;
+        width: 95%;
+    }
+
+    aside p{
+        margin-bottom: 2em;
+    }
+
+    #first{
+        margin-top: 1em;
+    }
+}

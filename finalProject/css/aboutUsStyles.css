@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/*
+    Author: Christopher Dickerson
+    Date:7/19/20
+
+    File: styles.css
+
+    General Styles
+*/
+
+@import url(../css/styles.css);
+/* Header Styles */
+h1{
+    display: block;
+    text-align: center;
+    font-size: 1.75em;
+    letter-spacing: 3px;
+    padding-bottom: 0.5em;
+}
+
+/* Two Column Layout Styles */
+.column {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#first{
+    border-right: solid black 0.5em;
+}
+
+/* Styles */
+p{
+    font-size: 1em;
+    line-height: 3em;
+}
+
+#contact{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+ol{
+    font-size: 1em;
+    line-height: 1em;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 641px) {
+    .column {
+        float: left;
+        width: 50%;
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

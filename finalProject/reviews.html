@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="em">
+        <!--
+        Author: Christopher Dickerson
+        Date: 7/18/20
+
+        File: reviews.html
+
+        This is a page where other people can see reviews of the website
+        and leave reviews of their own.
+     -->
+
+     <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Create Athlete</title>
+        <link href="css/reset.css" rel="stylesheet" media="all"/>
+        <link href="css/reviewStyles.css" rel="stylesheet" media="all"/>
+        <link href="css/animate.css" rel="stylesheet" media="all"/>
+     </head>
+
+     <body>
+        <header>
+            <image src="../finalProject/media/RunnerSpaceLogo.png" alt="Runner Space Logo"/>
+
+            <nav class="horizontal">
+                <ul class="mainmenu">
+                    <li><a href="homePage.html">Home</a></li>
+                    <li><a href="createAthlete.html">Create Athlete</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </nav>
+            <div id="box"></div>
+            <div class="space"></div>
+        </header>
+        <aside>
+            <blockquote id="first">
+                "I love using RunnerSpace! The community is great and it helps me connect
+                with other runners. I would recomend this website to any runner." 
+                - Dennis G.
+            </blockquote>
+            <blockquote>
+                "I was amazed at the quality of RunnerSpace. I will let my mom know about 
+                this, she could really make use of RunnerSpace! RunnerSpace is both attractive 
+                and highly adaptable."- Warren W.
+            </blockquote>
+            <blockquote>
+                "Fantastic, I'm totally blown away by RunnerSpace" - Jack F.
+            </blockquote>
+        </aside>
+
+        <h1>Rate Your Experience</h1>
+         <form>
+             <fieldset>
+                <div class="formRow">
+                    <label>Did you enjoy RunnerSpace?</label>
+                    <fieldset class="optGroup">
+                        <label for="nexp">No</label>
+                        <input name="nexp" type="radio"/>
+                        <label for="yexp">Yes</label>
+                        <input name="nexp" type="radio"/>
+                    </fieldset>
+                </div>
+                <div class="formRow">
+                    <label for="ifno">If no why?</label>
+                    <textarea name="ifno" type="text"></textarea>
+                </div>
+                <div class="formRow">
+                    <label for="imp">What should we add next?</label>
+                    <textarea name="imp" type="text"></textarea>
+                </div>
+                <label>Email updates?</label>
+                <fieldset class="optGroup">
+                    <label for="nem">No</label>
+                    <input name="nem" type="radio"/>
+                    <label for="yem">Yes</label>
+                    <input name="nem" type="radio"/>
+                </fieldset>
+                <label for="ifyem">If yes what is your email?</label>
+                <input name="ifyem" type="email" id="email" placeholder="Enter Email Here" />
+
+                <div class="space"></div>
+                
+                <label class="tel" id="tellab">Phone Updates?</label>
+                <fieldset class="optGroup">
+                    <label for="nem" class="tel">No</label>
+                    <input name="nem" class= "tel" type="radio"/>
+                    <label for="yem" class="tel">Yes</label>
+                    <input name="nem" class="tel" type="radio"/>
+                </fieldset>
+                <label for="ifyem">If yes what is your phone #?</label>
+                <input name="ifyem" type="tel" class="tel" id="telid" placeholder="Enter Phone # Here" />
+
+                <button type="submit" class="button">
+                    <img src="media/button.png" alt="button" />
+                </button>
+                <button type="reset" class="button">
+                    <img src="media/Reset.png" alt="button" />
+                </button>
+            </fieldset>
+            
+         </form>
+         <footer>
+            RunnerSpace &#8226; Christopher Dickerson 2020
+        </footer>
+     </body>
+</html>

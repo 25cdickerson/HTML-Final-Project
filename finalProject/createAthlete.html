@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="em">
+        <!--
+        Author: Christopher Dickerson
+        Date: 7/18/20
+
+        File: homepage.html
+
+        This page is a form where you can enter in information to make a profile.
+        This currently does not work because I do not have the JavaScript experience
+        to make that work so it is just a form.
+     -->
+
+     <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Create Athlete</title>
+        <link href="css/reset.css" rel="stylesheet" media="all"/>
+        <link href="css/createAthleteStyles.css" rel="stylesheet" media="all"/>
+        <link href="css/animate.css" rel="stylesheet" media="all"/>
+     </head>
+     <body>
+        <header>
+            <image src="../finalProject/media/RunnerSpaceLogo.png" alt="Runner Space Logo"/>
+
+            <nav class="horizontal">
+                <ul class="mainmenu">
+                    <li><a href="homePage.html">Home</a></li>
+                    <li><a href="createAthlete.html">Create Athlete</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </nav>
+            <div id="box"></div>
+            <div class="space"></div>
+        </header>
+
+        <h1>Create Your Athlete</h1>
+        <p>* = you need to fill out that field in order to submit</p>
+
+        <form>
+            <fieldset>
+
+                <div class="formRow">
+                    <label for="name">Name*</label>
+                    <input name="name" id="name" type="text" placeholder="Enter Full Name"/>
+                </div>
+
+                <div class="formRow">
+                    <label for="bio">Bio</label>
+                    <textarea name="bio" id="bio" type="text" placeholder="Enter Your Bio"></textarea>
+                </div>
+
+                <div class="formRow">
+                    <label for="PR1">PR# 1*</label>
+                    <input name="PR1" id="PR1" type="text"/>
+                </div>
+
+                <div class="formRow">
+                    <label for="PR2">PR 2</label>
+                    <input name="PR1" id="PR2" type="text"/>
+                </div>
+
+                <div class="formRow">
+                    <label for="PR3">PR 3</label>
+                    <input name="PR3" id="PR3" type="text"/>
+                </div>
+
+                <div class="formRow">
+                    <label for="pic">Profile Picture</label>
+                    <input name="pic" id="pic" type="file"/>
+                </div>
+
+                <div class="formRow">
+                    <label for="vid1">Video 1</label>
+                    <input name="vid1" id="vid1" type="text" placeholder="Enter URL Here">
+                </div>
+
+                <div class="formRow">
+                    <label for="vid2">Video 2</label>
+                    <input name="vid2" id="vid2" type="text" placeholder="Enter URL Here">
+                </div>
+
+                <div class="formRow">
+                    <label for="vid3">Video 3</label>
+                    <input name="vid3" id="vid3" type="text" placeholder="Enter URL Here">
+                </div>
+
+                <button type="submit" class="button" id="submit">
+                    <img src="media/button.png" alt="button" />
+                </button>
+                <button type="reset" class="button" id="reset">
+                    <img src="media/Reset.png" alt="button" />
+                </button>
+            </fieldset>
+        </form>
+
+        <footer>
+            RunnerSpace &#8226; Christopher Dickerson 2020
+        </footer>
+    </body>
+</html>
